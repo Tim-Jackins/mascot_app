@@ -2,7 +2,7 @@
 
 > Pending better name
 
-[![license](https://img.shields.io/github/license/:tim_jackins/:mascot_app.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 ## Table of Contents
