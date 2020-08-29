@@ -21,6 +21,8 @@ This is a web application to be used for the purpose of helping mascot enthusias
 
 The application consists of postgresql as the database, django as the backend, and react as the frontend.
 
+![database_models_graph](./database_models_graph.png)
+
 ## Install
 
 [Install pipenv](https://pypi.org/project/pipenv/) on your machine.

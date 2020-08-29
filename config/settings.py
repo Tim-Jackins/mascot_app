@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'rest_framework',
     'phone_field',
+    'django_extensions',
 
     # Local
     'users',

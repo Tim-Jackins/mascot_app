@@ -17,6 +17,9 @@ Pillow = "*"
 coverage = "*"
 djangorestframework = "*"
 django-phone-field = "*"
+django-extensions = "*"
+graphviz = "*"
+pydotplus = "*"
 
 [requires]
 python_version = "3.8"
