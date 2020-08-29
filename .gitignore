@@ -11,5 +11,8 @@ __pycache__/
 db.sqlite3
 media
 
-# Yarn
+# Yarn #
 node_modules
+
+# Misc #
+db_seed_data
