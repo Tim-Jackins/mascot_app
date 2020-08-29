@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "==3.0.5"
+django-allauth = "==0.41.0"
+django-crispy-forms = "==1.9.0"
+django-debug-toolbar = "==2.2"
+whitenoise = "==5.0.1"
+pylint = "*"
+yapf = "*"
+Pillow = "*"
+coverage = "*"
+djangorestframework = "*"
+django-phone-field = "*"
+
+[requires]
+python_version = "3.8"
