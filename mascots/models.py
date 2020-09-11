@@ -6,19 +6,25 @@ class Maker(models.Model):
   name = models.CharField(max_length=31)
   website = models.URLField()
 
+  def __str__(self):
+    return f'{self.name}'
+
 
 class Variety(models.Model):
   name = models.CharField(max_length=31)
 
+  def __str__(self):
+    return f'{self.name}'
+
 
 class Mascot(models.Model):
   MASCOT_CHARACTER_TYPE_CHOICES = (
-      ('AC', 'Animal Character'),
-      ('LA', 'Live Animal'),
-      ('HC', 'Human Character'),
-      ('LH', 'Live Human'),
-      # ('NM', 'No Mascot'),
-      ('MC', 'Multiple Characters'))
+    ('AC', 'Animal Character'),
+    ('LA', 'Live Animal'),
+    ('HC', 'Human Character'),
+    ('LH', 'Live Human'),
+    # ('NM', 'No Mascot'),
+    ('MC', 'Multiple Characters'))
 
   # Maybe implement this?
   # PERFORMER_TYPE_CHOICES
@@ -36,7 +42,8 @@ class Mascot(models.Model):
   character_type = models.CharField(max_length=2, choices=MASCOT_CHARACTER_TYPE_CHOICES)
   maker = models.ForeignKey(Maker, on_delete=models.PROTECT)
   variety = models.ForeignKey(Variety, related_name='variety', on_delete=models.PROTECT)
-  sub_veriety = models.ForeignKey(Variety, related_name='sub_variety', on_delete=models.PROTECT)
+  sub_variety = models.ForeignKey(Variety, related_name='sub_variety', on_delete=models.PROTECT)
+  is_current_character = models.BooleanField()
   selection_process = models.CharField(max_length=255)
   performer_type = models.CharField(max_length=255)
   website = models.URLField()
